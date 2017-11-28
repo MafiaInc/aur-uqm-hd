@@ -1,0 +1,607 @@
+From d3fc6ddaea8b5ee5285b4745fafbf84588338203 Mon Sep 17 00:00:00 2001
+From: Martin Dimitrov <martian@mafiainc.net>
+Date: Tue, 28 Nov 2017 15:21:59 +0200
+Subject: [PATCH] Fix possible naming collision for _STRINGS_H
+
+ * Fix build errors on gcc (GCC) 7.2.0
+---
+ src/uqm/comm/arilou/strings.h  | 6 +++---
+ src/uqm/comm/blackur/strings.h | 6 +++---
+ src/uqm/comm/chmmr/strings.h   | 6 +++---
+ src/uqm/comm/comandr/strings.h | 6 +++---
+ src/uqm/comm/druuge/strings.h  | 6 +++---
+ src/uqm/comm/ilwrath/strings.h | 6 +++---
+ src/uqm/comm/melnorm/strings.h | 6 +++---
+ src/uqm/comm/mycon/strings.h   | 6 +++---
+ src/uqm/comm/orz/strings.h     | 6 +++---
+ src/uqm/comm/pkunk/strings.h   | 6 +++---
+ src/uqm/comm/rebel/strings.h   | 6 +++---
+ src/uqm/comm/shofixt/strings.h | 6 +++---
+ src/uqm/comm/slyhome/strings.h | 6 +++---
+ src/uqm/comm/slyland/strings.h | 6 +++---
+ src/uqm/comm/spahome/strings.h | 6 +++---
+ src/uqm/comm/spathi/strings.h  | 6 +++---
+ src/uqm/comm/starbas/strings.h | 6 +++---
+ src/uqm/comm/supox/strings.h   | 6 +++---
+ src/uqm/comm/syreen/strings.h  | 6 +++---
+ src/uqm/comm/talkpet/strings.h | 6 +++---
+ src/uqm/comm/thradd/strings.h  | 6 +++---
+ src/uqm/comm/umgah/strings.h   | 6 +++---
+ src/uqm/comm/urquan/strings.h  | 6 +++---
+ src/uqm/comm/utwig/strings.h   | 6 +++---
+ src/uqm/comm/vux/strings.h     | 6 +++---
+ src/uqm/comm/yehat/strings.h   | 6 +++---
+ src/uqm/comm/zoqfot/strings.h  | 6 +++---
+ 27 files changed, 81 insertions(+), 81 deletions(-)
+
+diff --git a/src/uqm/comm/arilou/strings.h b/src/uqm/comm/arilou/strings.h
+index 807dde081..78746e10e 100644
+--- a/src/uqm/comm/arilou/strings.h
++++ b/src/uqm/comm/arilou/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -121,4 +121,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/blackur/strings.h b/src/uqm/comm/blackur/strings.h
+index c2510f044..68311c9bd 100644
+--- a/src/uqm/comm/blackur/strings.h
++++ b/src/uqm/comm/blackur/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -100,4 +100,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/chmmr/strings.h b/src/uqm/comm/chmmr/strings.h
+index 6fe3ae9a8..1f2b5f137 100644
+--- a/src/uqm/comm/chmmr/strings.h
++++ b/src/uqm/comm/chmmr/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -102,4 +102,4 @@ enum
+ 	GOODBYE,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/comandr/strings.h b/src/uqm/comm/comandr/strings.h
+index 0bf90a3c2..950730cf5 100644
+--- a/src/uqm/comm/comandr/strings.h
++++ b/src/uqm/comm/comandr/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -126,4 +126,4 @@ enum
+ 	goodbye_commander,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/druuge/strings.h b/src/uqm/comm/druuge/strings.h
+index 346f1f6c2..6853def03 100644
+--- a/src/uqm/comm/druuge/strings.h
++++ b/src/uqm/comm/druuge/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -129,4 +129,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/ilwrath/strings.h b/src/uqm/comm/ilwrath/strings.h
+index 546923bee..9072df13c 100644
+--- a/src/uqm/comm/ilwrath/strings.h
++++ b/src/uqm/comm/ilwrath/strings.h
+@@ -15,8 +15,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -132,4 +132,4 @@ enum
+ 	but_evil_is_defined,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/melnorm/strings.h b/src/uqm/comm/melnorm/strings.h
+index 703ebc628..ee11d9c9e 100644
+--- a/src/uqm/comm/melnorm/strings.h
++++ b/src/uqm/comm/melnorm/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -306,4 +306,4 @@ enum
+ 	ENUMERATE_THOUSAND
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/mycon/strings.h b/src/uqm/comm/mycon/strings.h
+index e25ed849c..7868c4d0a 100644
+--- a/src/uqm/comm/mycon/strings.h
++++ b/src/uqm/comm/mycon/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -133,4 +133,4 @@ enum
+ 	WONT_FALL_FOR_TRICK,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/orz/strings.h b/src/uqm/comm/orz/strings.h
+index 91c40ff40..bdc235a4a 100644
+--- a/src/uqm/comm/orz/strings.h
++++ b/src/uqm/comm/orz/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -140,4 +140,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/pkunk/strings.h b/src/uqm/comm/pkunk/strings.h
+index f814a0191..73367eae1 100644
+--- a/src/uqm/comm/pkunk/strings.h
++++ b/src/uqm/comm/pkunk/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -211,4 +211,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/rebel/strings.h b/src/uqm/comm/rebel/strings.h
+index 370e684ff..8bed60bb1 100644
+--- a/src/uqm/comm/rebel/strings.h
++++ b/src/uqm/comm/rebel/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -58,4 +58,4 @@ enum
+ 	HATE_PKUNK_REBEL,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/shofixt/strings.h b/src/uqm/comm/shofixt/strings.h
+index 51413fe4d..f781128e8 100644
+--- a/src/uqm/comm/shofixt/strings.h
++++ b/src/uqm/comm/shofixt/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -119,4 +119,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/slyhome/strings.h b/src/uqm/comm/slyhome/strings.h
+index c453ba31d..b0ca18bfd 100644
+--- a/src/uqm/comm/slyhome/strings.h
++++ b/src/uqm/comm/slyhome/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -140,4 +140,4 @@ enum
+ 	WHY_YES_THERE_IS,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/slyland/strings.h b/src/uqm/comm/slyland/strings.h
+index 738db8b57..7a49c63ad 100644
+--- a/src/uqm/comm/slyland/strings.h
++++ b/src/uqm/comm/slyland/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -110,4 +110,4 @@ enum
+ 	ENUMERATE_NINETY,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/spahome/strings.h b/src/uqm/comm/spahome/strings.h
+index 1cb562536..6a8b59e37 100644
+--- a/src/uqm/comm/spahome/strings.h
++++ b/src/uqm/comm/spahome/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -171,4 +171,4 @@ enum
+ 	WHAT_ABOUT
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/spathi/strings.h b/src/uqm/comm/spathi/strings.h
+index cbab78d65..148e9fefd 100644
+--- a/src/uqm/comm/spathi/strings.h
++++ b/src/uqm/comm/spathi/strings.h
+@@ -15,8 +15,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -157,4 +157,4 @@ enum
+ 	OK_WE_FIGHT_AT_PLUTO,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/starbas/strings.h b/src/uqm/comm/starbas/strings.h
+index 5de7d9758..a486a3f94 100644
+--- a/src/uqm/comm/starbas/strings.h
++++ b/src/uqm/comm/starbas/strings.h
+@@ -15,8 +15,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -324,4 +324,4 @@ enum
+ 	SPACE,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/supox/strings.h b/src/uqm/comm/supox/strings.h
+index d24aa5d50..9b133a41c 100644
+--- a/src/uqm/comm/supox/strings.h
++++ b/src/uqm/comm/supox/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -121,4 +121,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/syreen/strings.h b/src/uqm/comm/syreen/strings.h
+index 2454279d4..0c995073f 100644
+--- a/src/uqm/comm/syreen/strings.h
++++ b/src/uqm/comm/syreen/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -155,4 +155,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/talkpet/strings.h b/src/uqm/comm/talkpet/strings.h
+index a0f5ad771..5f20b6c39 100644
+--- a/src/uqm/comm/talkpet/strings.h
++++ b/src/uqm/comm/talkpet/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -137,4 +137,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/thradd/strings.h b/src/uqm/comm/thradd/strings.h
+index 35f40c0c4..d9ddc57c9 100644
+--- a/src/uqm/comm/thradd/strings.h
++++ b/src/uqm/comm/thradd/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -178,4 +178,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/umgah/strings.h b/src/uqm/comm/umgah/strings.h
+index 8442ebe1f..5e4bdd57e 100644
+--- a/src/uqm/comm/umgah/strings.h
++++ b/src/uqm/comm/umgah/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -112,4 +112,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/urquan/strings.h b/src/uqm/comm/urquan/strings.h
+index 193634f09..561d357a3 100644
+--- a/src/uqm/comm/urquan/strings.h
++++ b/src/uqm/comm/urquan/strings.h
+@@ -14,8 +14,8 @@
+  *  along with this program; if not, write to the Free Software
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -98,4 +98,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/utwig/strings.h b/src/uqm/comm/utwig/strings.h
+index 1a108f5aa..315fe55a3 100644
+--- a/src/uqm/comm/utwig/strings.h
++++ b/src/uqm/comm/utwig/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -141,4 +141,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/vux/strings.h b/src/uqm/comm/vux/strings.h
+index 7aafcf820..1c9de2b5c 100644
+--- a/src/uqm/comm/vux/strings.h
++++ b/src/uqm/comm/vux/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -126,4 +126,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/yehat/strings.h b/src/uqm/comm/yehat/strings.h
+index 810887f63..fb57e6007 100644
+--- a/src/uqm/comm/yehat/strings.h
++++ b/src/uqm/comm/yehat/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -99,4 +99,4 @@ enum
+ 	OUT_TAKES,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+diff --git a/src/uqm/comm/zoqfot/strings.h b/src/uqm/comm/zoqfot/strings.h
+index a6a0769f7..2ccdff3d8 100644
+--- a/src/uqm/comm/zoqfot/strings.h
++++ b/src/uqm/comm/zoqfot/strings.h
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+  */
+ 
+-#ifndef _STRINGS_H
+-#define _STRINGS_H
++#ifndef __STRINGS_H
++#define __STRINGS_H
+ 
+ enum
+ {
+@@ -361,5 +361,5 @@ enum
+ 	OUT_TAKES13,
+ };
+ 
+-#endif /* _STRINGS_H */
++#endif /* __STRINGS_H */
+ 
+-- 
+2.15.0
+
